@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. D. Srinivasan – Principal, K. Ramakrishnan College of Engineering</title>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121519;--panel:#1b2026;--steel:#aab4bf;--hi:#e8edf2;--or:#ff6a1a;--line:#2d353e;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--steel);font:400 17px/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:Oxanium,system-ui,sans-serif;color:var(--hi);margin:0;line-height:1.1}
+a{color:var(--or)}
+#hero{position:relative;height:100vh;min-height:620px;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#2a323b 0,#121519 70%)}
+#cv{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.hero-txt{position:absolute;left:5vw;bottom:7vh;max-width:min(560px,90vw);pointer-events:none}
+.hero-txt h1{font-size:clamp(34px,6vw,72px);font-weight:800}
+.hero-txt p{margin:.6em 0 0;font-size:clamp(15px,2vw,19px)}
+nav{position:absolute;top:14px;left:5vw;right:5vw;display:flex;gap:18px;flex-wrap:wrap;font:500 15px Oxanium,sans-serif}
+nav a{color:var(--hi);text-decoration:none;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--or)}
+#info{position:absolute;right:4vw;bottom:7vh;width:min(320px,88vw);background:#1b2026e6;border:1px solid var(--line);border-left:4px solid var(--or);padding:14px 16px;font-size:15px}
+#info b{font-family:Oxanium;color:var(--hi);font-size:18px;display:block}
+#up{position:absolute;right:4vw;top:52px;font:500 14px Oxanium;background:var(--or);color:#111;border:0;padding:8px 12px;cursor:pointer}
+section{max-width:1080px;margin:0 auto;padding:84px 5vw 0}
+h2{font-size:clamp(28px,4vw,44px);font-weight:700;margin-bottom:28px;padding-left:14px;border-left:6px solid var(--or)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;perspective:900px}
+.t{background:linear-gradient(145deg,#222a32,#171b20);border:1px solid var(--line);padding:20px;transition:transform .15s ease-out;transform-style:preserve-3d;will-change:transform}
+.t h3{font-size:20px;margin-bottom:6px}
+.t small{color:var(--or);font-family:Oxanium;font-weight:500}
+.big{font:800 52px Oxanium;color:var(--or);line-height:1}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.tl div{padding:0 0 22px 22px;position:relative}
+.tl div:before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;background:var(--or);transform:rotate(45deg)}
+.tl b{color:var(--hi);font-family:Oxanium}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--steel);padding:6px 12px;font:500 14px Oxanium;color:var(--hi);transition:transform .2s}
+.chips span:hover{transform:translateY(-4px) rotateX(20deg);border-color:var(--or)}
+ol{padding-left:20px}li{margin-bottom:10px}
+footer{margin-top:90px;padding:40px 5vw 60px;border-top:1px solid var(--line);text-align:center}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+section,footer{position:relative;z-index:1}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:4px;width:0;background:linear-gradient(90deg,#ff6a1a,#ffb27a);z-index:60}
+#gl{position:fixed;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,#ff6a1a24,transparent 65%);pointer-events:none;z-index:2;left:-400px;top:-400px}
+.rv{opacity:0;translate:0 44px;scale:.96;transition:opacity .7s ease,translate .7s ease,scale .7s ease,transform .15s ease-out}
+.rv.in{opacity:1;translate:0 0;scale:1}
+h2:after{content:"";display:block;height:3px;width:0;background:var(--or);margin-top:10px;transition:width .9s ease}
+h2.in:after{width:120px}
+input#q{width:100%;background:var(--panel);border:1px solid var(--line);border-bottom:3px solid var(--or);color:var(--hi);padding:12px 14px;font:inherit;margin-bottom:14px}
+.chips button{background:none;border:1px solid var(--steel);color:var(--hi);padding:6px 14px;font:500 14px Oxanium;cursor:pointer}
+.chips button.on,.chips button:hover{background:var(--or);border-color:var(--or);color:#111}
+#plist li{background:var(--panel);border-left:3px solid var(--line);padding:10px 14px;list-style-position:inside;transition:border-color .2s,transform .2s}
+#plist li:hover{border-color:var(--or);transform:translateX(6px)}
+#plist b{color:var(--hi)}
+.fc{perspective:900px;height:170px;cursor:pointer}
+.fi{position:relative;height:100%;transform-style:preserve-3d;transition:transform .7s}
+.fc:hover .fi,.fc.f .fi{transform:rotateY(180deg)}
+.fa,.fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;padding:16px;border:1px solid var(--line);background:linear-gradient(145deg,#222a32,#171b20);display:flex;flex-direction:column;justify-content:center;gap:6px}
+.fb{transform:rotateY(180deg);background:linear-gradient(145deg,#ff6a1a,#b8430a);color:#161616}
+.fb b,.fb small{color:#161616}
+.fa h3{font-size:17px}
+.cf{position:relative;height:320px;perspective:1100px;margin:10px 0}
+.cc{position:absolute;left:50%;top:0;width:min(420px,80vw);margin-left:calc(min(420px,80vw)/-2);height:300px;padding:24px;background:linear-gradient(145deg,#2a323b,#171b20);border:1px solid var(--line);border-top:4px solid var(--or);transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .8s;display:flex;flex-direction:column;justify-content:space-between}
+.cc q{font:500 18px/1.5 Barlow;color:var(--hi);quotes:"“" "”"}
+.cc em{font-style:normal;font:500 14px Oxanium;color:var(--or)}
+.cc i{position:absolute;right:14px;top:12px;font:500 11px Oxanium;background:var(--line);padding:2px 8px;font-style:normal}
+.ctl{text-align:center;margin-top:8px}
+.ctl button{background:var(--panel);color:var(--hi);border:1px solid var(--line);width:44px;height:44px;font-size:20px;cursor:pointer;margin:0 6px}
+.ctl button:hover{background:var(--or);color:#111}
+.mq{overflow:hidden;margin-top:30px;border-block:1px solid var(--line);padding:12px 0;white-space:nowrap}
+.mq div{display:inline-block;animation:mq 28s linear infinite;font:700 22px Oxanium;color:var(--steel)}
+.mq span{margin:0 26px}.mq span:nth-child(3n){color:var(--or)}
+@keyframes mq{to{transform:translateX(-50%)}}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:46px;height:46px;background:var(--or);border:0;font-size:20px;cursor:pointer;z-index:60;opacity:0;pointer-events:none;transition:opacity .3s}
+#top.on{opacity:1;pointer-events:auto}
+@media (prefers-reduced-motion:reduce){.mq div{animation:none}.rv{opacity:1;translate:none;scale:1}}
+</style></head><body>
+<header id="hero">
+<canvas id="cv"></canvas>
+<nav><a href="#about">About</a><a href="#career">Career</a><a href="#recognition">Recognition</a><a href="#research">Research</a><a href="#leader">Leadership</a><a href="#pubs">Publications</a><a href="#ipr">Patents</a><a href="#voices">Testimonials</a><a href="#member">Memberships</a><a href="#contact">Contact</a></nav>
+<button id="up" title="Pick the official KRCE logo image to wrap it on the 3D emblem">Apply KRCE logo</button>
+<input id="file" type="file" accept="image/*" hidden>
+<div class="hero-txt"><h1>Dr. D. Srinivasan</h1><p>Professor &amp; Principal, K. Ramakrishnan College of Engineering, Tiruchirappalli. Manufacturing Technology, 33 years in engineering education.</p></div>
+<div id="info"><b>Drag, tap, explore</b>Tap any orbiting medallion to see the accreditation, membership or institution behind it.</div>
+</header>
+
+<section id="about"><h2>About</h2>
+<p>Engineering educator and academic administrator with 33 years across teaching, research and leadership. Principal of K. Ramakrishnan College of Engineering since May 2010, guiding the college through NAAC and NBA accreditation cycles and a place in the NIRF 200–300 band. Ph.D. in Manufacturing Technology from NIT Tiruchirappalli (2008).</p>
+<div class="grid" style="margin-top:26px">
+<div class="t"><div class="big">33</div>years in education and administration</div>
+<div class="t"><div class="big">27</div>international journal papers</div>
+<div class="t"><div class="big">40+</div>patents, designs and copyrights</div>
+<div class="t"><div class="big">5</div>Ph.D. scholars guided at Anna University</div>
+</div></section>
+
+<section id="career"><h2>Career</h2>
+<div class="tl">
+<div><b>Principal, K. Ramakrishnan College of Engineering</b><br>3 May 2010 to present</div>
+<div><b>Professor, SASTRA University, Thanjavur</b><br>April 2009 – April 2010</div>
+<div><b>Assistant Professor → Senior Lecturer → Lecturer</b><br>1992 – 2009, progressing through each grade</div>
+<div><b>Service Engineer (Cummins), Erection &amp; Commissioning Engineer (BUCKAU WOLF India)</b><br>May 1989 – Dec 1991, NLC site and NTPC Ramagundam</div>
+</div>
+<h3 style="margin:10px 0 14px">Education</h3>
+<div class="grid">
+<div class="t"><small>2008</small><h3>Ph.D., Manufacturing Technology</h3>NIT Tiruchirappalli, Commendable Grade</div>
+<div class="t"><small>1994</small><h3>M.E., Manufacturing Technology</h3>NIT Tiruchirappalli, First Class</div>
+<div class="t"><small>1989</small><h3>B.E., Mechanical Engineering</h3>Shanmugha College of Engineering, Thanjavur, First Class</div>
+</div></section>
+
+<section id="recognition"><h2>Recognition &amp; accreditation</h2>
+<div class="grid">
+<div class="t"><small>NAAC</small><h3>Accredited, then renewed</h3>Accreditation 2016–2021; renewal from 4 Dec 2018 to 31 Dec 2025.</div>
+<div class="t"><small>NBA</small><h3>Programme accreditation</h3>Certificates for 2019–2022 and renewal for 2022–2025.</div>
+<div class="t"><small>NIRF</small><h3>Band 200–300</h3>Ranked in the 251–300 band for 2021–22, and 200–300 for 2023–24 and 2024–25.</div>
+<div class="t"><small>Institution of Engineers (India)</small><h3>Best Institution Award 2025</h3>Presented at the 58th Engineers Day, 19 Sept 2025, with a special appreciation for academic leadership.</div>
+</div></section>
+
+<section id="research"><h2>Research &amp; leadership</h2>
+<div class="grid">
+<div class="t"><h3>Recognised supervisor</h3>Centre for Research, Anna University, Chennai (since 2023).</div>
+<div class="t"><h3>Academic Council</h3>Anna University, Chennai: 2014–2017 and 2024–2027.</div>
+<div class="t"><h3>NAAC peer team member</h3>Since May 2017. Presiding officer for GATE examinations since 2016.</div>
+<div class="t"><h3>Books</h3><i>Production Technology of Agricultural Machinery</i>; <i>Universal Human Values</i> (Pearson).</div>
+</div>
+<h3 style="margin:34px 0 14px">Highlighted publications</h3>
+<ol>
+<li>Influence of TiN particle addition on ZK60A magnesium alloy composites, <i>Ceramics International</i>, 2024. <a href="https://doi.org/10.1016/j.ceramint.2024.12.148">DOI</a></li>
+<li>Wire EDM performance on EN AW-6082 T6 aluminium alloy, <i>Journal of Materials Engineering and Performance</i>, 2023. <a href="https://doi.org/10.1007/s11665-023-08234-4">DOI</a></li>
+<li>3D printing manufacturing techniques, materials and applications: an overview, <i>Advances in Materials Science and Engineering</i>, 2021. <a href="https://doi.org/10.1155/2021/5756563">DOI</a></li>
+<li>Grey–Taguchi optimisation of boron carbide filled aluminium composites, <i>Materials Research Express</i>, 2019. <a href="https://doi.org/10.1088/2053-1591/ab11f9">DOI</a></li>
+</ol></section>
+<section id="leader"><h2>Academic leadership</h2><div class="grid" id="lead"></div>
+<h3 style="margin:34px 0 14px">Ph.D. scholars at Anna University</h3><div class="grid" id="scholars"></div></section>
+<section id="pubs"><h2>All publications</h2>
+<input id="q" placeholder="Search 27 journal papers and 11 conference papers…" aria-label="Search publications"><div class="chips" id="pf"></div><ol id="plist" style="margin-top:18px"></ol></section>
+
+<section id="ipr"><h2>Patents &amp; designs</h2>
+<div class="grid">
+<div class="t"><small>Granted</small><h3>Agricultural Dispenser Machine</h3>Application 201741034424</div>
+<div class="t"><small>Granted</small><h3>Methods and systems for making use of helmets mandatory</h3>Application 201841010937</div>
+<div class="t"><small>Published</small><h3>Rope car with advanced safety features</h3>Application 202241042694</div>
+<div class="t"><small>Published</small><h3>Hydraulic lugnut extractor</h3>Application 201841013350</div>
+<div class="t"><small>Registered designs</small><h3>20+ industrial designs</h3>Weed remover, tree climbing machine, smart dustbin, solar panel cleaner and more.</div>
+</div></section>
+
+<section id="voices"><h2>Testimonials</h2>
+<div class="cf" id="cf"></div><div class="ctl"><button id="pv" aria-label="Previous">‹</button><button id="nx" aria-label="Next">›</button></div></section>
+<section id="member"><h2>Memberships</h2>
+<div class="chips"><span>Chartered Engineer (IEI)</span><span>Fellow, Institution of Engineers (India)</span><span>Life Member, ISTE</span><span>Member, IEEE</span><span>Life Member, Indian Institute of Welding</span><span>Member, SAE</span><span>Member, Computer Society of India</span><span>Member, Indian Welding Society</span></div></section>
+
+<section id="contact"><h2>Contact</h2>
+<p>K. Ramakrishnan College of Engineering, NH-45, Trichy–Chennai Trunk Road, Samayapuram, Tiruchirappalli – 621112, Tamil Nadu.<br>
+
+<footer>Dr. D. Srinivasan · Principal, K. Ramakrishnan College of Engineering</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const hero=document.getElementById('hero'),cv=document.getElementById('cv'),info=document.getElementById('info');
+// tilt cards
+document.querySelectorAll('.t').forEach(e=>{
+  e.addEventListener('pointermove',ev=>{const r=e.getBoundingClientRect(),x=(ev.clientX-r.left)/r.width-.5,y=(ev.clientY-r.top)/r.height-.5;e.style.transform='perspective(700px) rotateY('+x*14+'deg) rotateX('+(-y*14)+'deg) translateZ(6px)'});
+  e.addEventListener('pointerleave',()=>{e.style.transform=''});
+});
+if(!window.THREE){info.innerHTML='<b>3D unavailable</b>Your browser blocked the 3D library. The rest of the page still works.';return}
+let renderer;try{renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){info.innerHTML='<b>3D unavailable</b>WebGL is not supported here.';return}
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
+const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,1,.1,100);
+scene.add(new THREE.AmbientLight(0xffffff,.6));
+const key=new THREE.DirectionalLight(0xffffff,1.1);key.position.set(4,5,7);scene.add(key);
+const glow=new THREE.PointLight(0xff6a1a,1.6,30);glow.position.set(-5,-2,5);scene.add(glow);
+
+function tex(a,b,col,img){
+  const c=document.createElement('canvas');c.width=c.height=512;const x=c.getContext('2d');
+  x.fillStyle='#161a1f';x.fillRect(0,0,512,512);
+  x.strokeStyle=col;x.lineWidth=16;x.beginPath();x.arc(256,256,236,0,7);x.stroke();
+  x.lineWidth=3;x.beginPath();x.arc(256,256,208,0,7);x.stroke();
+  if(img){x.save();x.beginPath();x.arc(256,256,196,0,7);x.clip();x.fillStyle='#fff';x.fillRect(0,0,512,512);const s=Math.min(392/img.width,392/img.height);x.drawImage(img,256-img.width*s/2,256-img.height*s/2,img.width*s,img.height*s);x.restore()}
+  else{x.textAlign='center';x.fillStyle=col;x.font='800 '+(a.length>4?110:150)+'px Oxanium,sans-serif';x.fillText(a,256,285);x.fillStyle='#cfd6de';x.font='500 36px Barlow,sans-serif';x.fillText(b,256,350)}
+  const t=new THREE.CanvasTexture(c);t.anisotropy=4;return t;
+}
+function medal(a,b,col,r,img){
+  const g=new THREE.Group();
+  const body=new THREE.Mesh(new THREE.CylinderGeometry(r,r,.22,64).rotateX(Math.PI/2),new THREE.MeshStandardMaterial({color:0x9aa5b1,metalness:.9,roughness:.3}));
+  g.add(body);
+  const m=new THREE.MeshStandardMaterial({map:tex(a,b,col,img),metalness:.3,roughness:.45});
+  const f=new THREE.Mesh(new THREE.CircleGeometry(r*.98,64),m);f.position.z=.115;g.add(f);
+  const k=new THREE.Mesh(new THREE.CircleGeometry(r*.98,64),m);k.position.z=-.115;k.rotation.y=Math.PI;g.add(k);
+  g.userData.mat=m;return g;
+}
+function gearShape(n,ro,ri){
+  const s=new THREE.Shape(),st=Math.PI*2/n,p=[[ri,0],[ro,.16],[ro,.34],[ri,.5]];let first=true;
+  for(let i=0;i<n;i++)p.forEach(([r,t])=>{const a=(i+t)*st,x=Math.cos(a)*r,y=Math.sin(a)*r;if(first){s.moveTo(x,y);first=false}else s.lineTo(x,y)});
+  const h=new THREE.Path();h.absarc(0,0,1.15,0,Math.PI*2,true);s.holes.push(h);return s;
+}
+const center=new THREE.Group();scene.add(center);
+const gear=new THREE.Mesh(new THREE.ExtrudeGeometry(gearShape(18,2.25,1.9),{depth:.4,bevelEnabled:true,bevelSize:.06,bevelThickness:.06,bevelSegments:2}).translate(0,0,-.2),new THREE.MeshStandardMaterial({color:0x8995a2,metalness:.92,roughness:.32}));
+center.add(gear);
+const ring=new THREE.Mesh(new THREE.TorusGeometry(1.2,.07,16,64),new THREE.MeshStandardMaterial({color:0xff6a1a,emissive:0xff4a00,emissiveIntensity:.5}));
+ring.position.z=.1;center.add(ring);
+let krce=medal('KRCE','Tiruchirappalli','#ff6a1a',1.15);krce.position.z=.15;
+const holder=new THREE.Group();holder.add(krce);center.add(holder);
+
+const data=[
+ ['NAAC','Accredited','#ff6a1a','NAAC accreditation','Accredited 2016–2021; renewal from Dec 2018 to Dec 2025. Dr. Srinivasan has also been a NAAC peer team member since 2017.'],
+ ['NBA','Accredited','#aab4bf','NBA accreditation','Programme accreditation certificates for 2019–2022 and the renewal for 2022–2025.'],
+ ['NIRF','200–300','#ff6a1a','NIRF ranking band','Ranked in the 251–300 band (2021–22) and the 200–300 band (2023–24 and 2024–25).'],
+ ['IEEE','Member','#aab4bf','IEEE','Member, IEEE (membership M 97631081).'],
+ ['ISTE','Life Member','#ff6a1a','Indian Society for Technical Education','Life Member, ISTE (LM 68166).'],
+ ['IEI','Chartered Eng.','#aab4bf','Institution of Engineers (India)','Chartered Engineer and Fellow. The college received the Best Institution Award 2025 from IEI Tiruchirappalli.'],
+ ['AU','Anna Univ.','#ff6a1a','Anna University, Chennai','Recognised research supervisor and Academic Council member (2024–2027).'],
+ ['NIT','Trichy','#aab4bf','NIT Tiruchirappalli','Alma mater: M.E. (1994) and Ph.D. in Manufacturing Technology (2008).']
+];
+const orbit=[];
+function build(){
+  data.forEach((d,i)=>{const m=medal(d[0],d[1],d[2],.8);m.userData.info=d;m.userData.base=i/data.length*Math.PI*2;m.userData.spin=0;m.userData.spinT=0;scene.add(m);orbit.push(m)});
+}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(()=>{
+  holder.remove(krce);krce=medal('KRCE','Tiruchirappalli','#ff6a1a',1.15);krce.position.z=.15;holder.add(krce);build();
+});
+
+// upload KRCE logo
+const up=document.getElementById('up'),file=document.getElementById('file');
+up.onclick=()=>file.click();
+file.onchange=()=>{const f=file.files[0];if(!f)return;const im=new Image();im.onload=()=>{const t=tex('','','#ff6a1a',im);krce.userData.mat.map=t;krce.userData.mat.needsUpdate=true};im.src=URL.createObjectURL(f)};
+
+// interaction
+let tx=0,ty=0,drag=false,lx=0,rotY=0,spinK=0;
+const ray=new THREE.Raycaster(),mp=new THREE.Vector2();
+function setMouse(e){const r=cv.getBoundingClientRect();mp.x=(e.clientX-r.left)/r.width*2-1;mp.y=-((e.clientY-r.top)/r.height)*2+1}
+function pick(){ray.setFromCamera(mp,cam);const hit=ray.intersectObjects(scene.children.filter(o=>o.isGroup&&o!==center),true)[0];let o=hit&&hit.object;while(o&&!o.userData.info)o=o.parent;return o||null}
+let hov=null;
+cv.addEventListener('pointermove',e=>{setMouse(e);tx=mp.x;ty=mp.y;if(drag){rotY+=(e.clientX-lx)*.01;lx=e.clientX}hov=pick();cv.style.cursor=hov?'pointer':'grab'});
+cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;setMouse(e);const p=pick();if(p){p.userData.spinT+=Math.PI*2;info.innerHTML='<b>'+p.userData.info[3]+'</b>'+p.userData.info[4]}else{ray.setFromCamera(mp,cam);if(ray.intersectObject(center,true).length)spinK+=Math.PI*2}});
+addEventListener('pointerup',()=>{drag=false});
+function size(){const w=hero.clientWidth,h=hero.clientHeight;renderer.setSize(w,h,false);cam.aspect=w/h;cam.position.set(0,0,w/h<.9?19:12.5);cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let t=0;
+function loop(){
+  requestAnimationFrame(loop);if(!still)t+=.004;
+  const R=w=>w;
+  center.rotation.y+=((tx*.4+rotY)-center.rotation.y)*.06;
+  center.rotation.x+=((-ty*.2)-center.rotation.x)*.06;
+  gear.rotation.z+=still?0:.003;
+  spinK*=.96;holder.rotation.y+=(spinK-holder.rotation.y*0)*.0;
+  if(spinK>.01){holder.rotation.y+=spinK*.05}
+  orbit.forEach(m=>{
+    const a=m.userData.base+t,R=5.6;
+    m.position.set(Math.cos(a)*R,-Math.sin(a)*1.5,Math.sin(a)*R*.55-.5);
+    const d=m.userData.spinT-m.userData.spin;m.userData.spin+=d*.08;
+    m.rotation.y=Math.cos(a)*-.35+m.userData.spin;
+    const s=(m===hov?1.18:1)*(1+Math.sin(a)*.08);m.scale.setScalar(s);
+  });
+  renderer.render(scene,cam);
+}
+loop();
+})();
+</script>
+<button id="top" aria-label="Back to top">↑</button>
+<script>
+(function(){
+const $=s=>document.querySelector(s),mk=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// ---------- data ----------
+const J=`2024|Ceramics International|Influence of TiN particle addition on ZK60A magnesium alloy composites made by powder metallurgy|10.1016/j.ceramint.2024.12.148
+2024|Materials Research|MnO₂/rGO nanocomposite for electrochemical energy storage|10.1590/1980-5373-MR-2024-0130
+2024|Ionics|Crystalline Zn-Ag nanoalloy electrodeposits: anti-corrosion and hardness|10.1007/s11581-024-05600-7
+2024|Journal of the Institution of Engineers (India): Series D|Aluminium hybrid composites obtained through stir casting|10.1007/s40033-023-00512-8
+2023|Journal of Materials Engineering and Performance|Wire EDM performance on EN AW-6082 T6 aluminium alloy|10.1007/s11665-023-08234-4
+2023|Materials Today Communications|Hydroxyapatite in sintered magnesium matrix composites|10.1016/j.mtcomm.2023.105582
+2023|Surface Review and Letters|Laser cutting of SS347 optimised with GRA and TOPSIS|10.1142/S0218625X23500397
+2022|Surface Topography: Metrology and Properties|Surface roughness and MRR of WEDM on SS304 (ANOVA, regression)|10.1088/2051-672X/ac6c9e
+2022|Surface Topography: Metrology and Properties|Wear of hydroxyapatite reinforced polymer composite for biomedical use|
+2022|Silicon|Laser square hole drilling of AA7475/SiC/ZrSiO4 composites|10.1007/s12633-021-01252-8
+2022|Bulletin of the Polish Academy of Sciences: Technical Sciences|FSW of AZ31B–AA8110 alloy: microstructure and strength|10.24425/bpasts.2022.140098
+2021|Surface Topography: Metrology and Properties|Electric erosion of nickel-based super alloy Waspaloy using RSM|10.1088/2051-672X/ac0f33
+2021|Advances in Materials Science and Engineering|3D printing manufacturing techniques, materials and applications|10.1155/2021/5756563
+2020|International Journal of Manufacturing Technology and Management|Turning parameters, machining time and vibration of CFRP laminates|10.1504/IJMTM.2020.10027160
+2019|Materials Research Express|Grey-Taguchi optimisation of boron carbide filled aluminium composites|10.1088/2053-1591/ab11f9
+2018|Machines and Mechanical Engineering (Lodz Univ. of Technology)|Drilling small holes in duplex stainless steel SS2205 using EDM|
+2018|International Journal of Mechanical Engineering and Technology|Direct steam generation using a solar parabolic dish collector|
+2018|International Journal of Materials Engineering Innovation|Cut quality of Al 6061-T6 composites by abrasive water jet machining|10.1504/IJMATEI.2018.096043
+2018|TAGA Journal of Graphic Technology|Multi-pass drilling of GFRP with different drill bits using fuzzy inference|
+2017|Journal of Materials Science: Materials in Electronics|Mg-doped ZnO on c-cut sapphire by RF sputtering for hydrogen sensing|10.1007/s10854-017-7007-2
+2017|Journal of Chemical and Pharmaceutical Sciences|Bioremediation of dyes and heavy metal ions using Cynodon dactylon: a review|
+2017|International Journal of ChemTech Research|Biosorption of heavy metals and dyes using plant weeds: a review|
+2015|International Journal of Applied Engineering Research|Minimising travel time of a line follower robot using a genetic algorithm|
+2015|International Journal of Applied Engineering Research|Dispatching rule learning for flow time in permutation flow shop scheduling|
+2014|International Journal of Research and Development in Engineering and Science|Cutting parameters in EN 8 steel using artificial neural networks: a review|
+2014|Global Journal of Engineering Sciences and Researches|Turning of Al-TiC metal matrix composite using RSM design|
+2013|International Journal of Research in Management & Technology|Quality of work life at Aditya Trading Solution Pvt. Ltd.|`.split("\n").map(l=>{const a=l.split("|");return{y:a[0],v:a[1],t:a[2],d:a[3],k:"Journals"}});
+const C=`2019|ICN2K19, Syed Ammal Engineering College|Abrasive wear of jatropha oil cake incorporated basalt fibre epoxy composites
+2019|Advancements in Polymeric Materials, CIPET Chennai|Coupling agents in TiO₂ and TiC filled basalt fabric epoxy composite
+2015|INCAPIE 2015|Drilling of GFRP composites for optimal surface roughness and delamination
+2007|POM-2007, Annamalai University|Design optimisation of a machine tool speed box using a genetic algorithm
+2004|CAAMMT 2004, IIT Madras|Gear box design optimisation using a genetic algorithm
+2004|MMA 2004, St. Joseph’s College of Engineering|Gear box design optimisation using simulated annealing
+2003|PINNACLE 2003, Govt. College of Engineering Thrissur|Gear box design optimisation using simulated annealing
+2001|Anna University MIT campus|Gear box design with genetic algorithm and simulated annealing
+2001|IIT Kanpur national symposium|Gearbox design optimisation using a genetic algorithm
+2000|ICMAT-2000, Universiti Teknologi Malaysia|Gear design optimisation with genetic algorithm and simulated annealing
+2000|Kumaraguru College of Technology, Coimbatore|Static analysis of roll over protective structures using FEM`.split("\n").map(l=>{const a=l.split("|");return{y:a[0],v:a[1],t:a[2],k:"Conferences"}});
+const B=[{y:"Book",v:"RK Publisher, Coimbatore",t:"Production Technology of Agricultural Machinery (with Alagarsamy, Meignanamoorthy, Ravichandran)",k:"Books"},{y:"Book",v:"Pearson, ISBN 978-81-19896-97-4",t:"Universal Human Values (with A. Sirajunnisa)",k:"Books"}];
+const P=[...B,...J,...C];
+const IP=`Fume Extraction and Filter Apparatus|Published|201741006758|Utility patent
+Agricultural Distributor Machine|Published|201741034423|Utility patent
+Agricultural Dispenser Machine|Granted|201741034424|Utility patent
+Hydraulic Lugnut Extractor|Published|201841013350|Utility patent
+Methods and systems for making use of helmets mandatory|Granted|201841010937|Utility patent
+Combined system for tractor implement control|Published|201941003305|Utility patent
+Rapid advanced collision detection warning system (camera vision)|Published|202241000116|Utility patent
+Rope car with advanced safety features|Published|202241042694|Utility patent
+Automatic wall cleaning system|Filed|202241070815|Utility patent
+Weed remover with plough|Registered|343383-001|Design
+Weed remover|Registered|343383-002|Design
+Tillage sprayer|Registered|343383-003|Design
+Cycles and motorcycles stand|Registered|343380-002|Design
+Headphone|Registered|341651-001|Design
+Tree climbing machine|Registered|350478-001|Design
+Floor cleaning machine|Registered|350299-001|Design
+Portable lamp|Registered|350300-001|Design
+Pultrusion winding machine|Registered|350298-001|Design
+Helmet|Registered|369431-001|Design
+Helmet (second design)|Registered|369461-001|Design
+Tire pressure monitoring device|Registered|369416-001|Design
+Stairs climbing trolley|Registered|369453-001|Design
+Solar panel cleaning machine|Registered|369462-001|Design
+Solar collector|Filed|369463-001|Design
+Grass cutting machine|Registered|378073-003|Design
+Ceiling fan cleaner|Registered|378073-001|Design
+Semi arc circle antenna for mobile applications|Filed|378073-002|Design
+Pneumatic jack|Registered|378071-002|Design
+Hydraulic jack|Registered|378071-001|Design
+Smart dustbin|Registered|378070-001|Design`.split("\n").map(l=>l.split("|"));
+const L=[["Recognised supervisor","Ref. No. 4120127, Faculty of Mechanical Engineering, Centre for Research, Anna University, Chennai (12 April 2023)."],["Academic Council, Anna University","Member for 2014–2017 and again for 2024–2027."],["NAAC peer team","Peer committee member since May 2017."],["GATE examinations","Presiding officer from 2016 onwards."],["Srimad Andavan Arts and Science College","Academic Council member, 2014–2016 and 2016–2018."],["SASTRA University","Member of Academic Council and Board of Studies."],["Boards of Studies","Member, M.Tech (Non-Destructive Testing). Mechanical Engineering board, Bharathidasan University."],["Curriculum development","Chief for M.Tech (Integrated Automobile Engineering). Framed a new syllabus for Industrial Robotics."],["Accreditation visits","Prepared reports for AICTE, NBA and NAAC committee visits."],["Examiner","Anna University, Bharathidasan University, SCSVMV Kancheepuram, Thiagarajar College of Engineering, GCT Coimbatore, Annamalai University and TNPSC."],["Reviewer","Springer, International Journal of Advanced Manufacturing Technology. Also on doctoral committees for Anna University candidates."],["Awards, 19 Sept 2025","Best Institution Award 2025 and Best IEI Chapter Award 2025 (Information Technology) from IEI Tiruchirappalli, plus a special appreciation for academic leadership."],["Industrial experience","2 years 7 months: Cummins service engineer at the NLC site, and erection and commissioning of chutes, belt conveyors and paddle feeders at NTPC Ramagundam."]];
+const S=[["Saravanan H","Joined July 2019","Completed"],["Rajmohan G","Joined July 2017","Completed"],["Arivazhagan","Joined January 2023","Research co-ordinator"],["Nelson Raja","Joined July 2023","Supervisor"],["Deivanai K","Joined July 2025","Supervisor"]];
+const M=[["Chartered Engineer","Institution of Engineers (India)"],["Fellow, Life Member","IEI, F1168629"],["Life Member","ISTE, LM 68166"],["Member","IEEE, M 97631081"],["Life Member","Indian Institute of Welding, M/R8489/L"],["Member","Indian Welding Society, L01684"],["Member","Society of Automotive Engineers, MSAE7110410197"],["Member","Computer Society of India, CSIN1070909"]];
+const V=[["Recognition","Special appreciation for academic leadership, administrative excellence and fostering a culture of learning and innovation.","Institution of Engineers (India), 58th Engineers Day, 2025",1],["Sample","Under his leadership the college moved from inspection to a habit of continuous improvement.","Faculty colleague (replace with a real name)",0],["Sample","He listened, then opened doors: labs, patents and industry visits became part of our degree.","Alumnus (replace with a real name)",0],["Sample","His guidance as a supervisor shaped both my thesis and the way I think about manufacturing research.","Research scholar (replace with a real name)",0]];
+// ---------- render ----------
+const lead=$("#lead");L.forEach(a=>lead.append(mk("div","t","<h3>"+a[0]+"</h3>"+a[1])));
+const sch=$("#scholars");S.forEach(a=>sch.append(mk("div","t","<small>"+a[2]+"</small><h3>"+a[0]+"</h3>"+a[1])));
+let cat="All";const pl=$("#plist"),pf=$("#pf"),q=$("#q");
+function rp(){const s=q.value.toLowerCase();pl.innerHTML="";P.filter(p=>(cat==="All"||p.k===cat)&&(p.t+p.v+p.y).toLowerCase().includes(s)).forEach(p=>pl.append(mk("li","rv in","<b>"+p.y+"</b> · "+p.v+"<br>"+p.t+(p.d?" <a href='https://doi.org/"+p.d+"'>DOI</a>":""))));if(!pl.children.length)pl.append(mk("li","","No publication matches that search. Clear the search box or pick All."))}
+["All","Journals","Conferences","Books"].forEach(c=>{const b=mk("button",c==="All"?"on":"",c);b.onclick=()=>{cat=c;pf.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");rp()};pf.append(b)});
+q.oninput=rp;rp();
+// patents: flip cards + filter
+const old=$("#ipr .grid");if(old)old.remove();
+const ih=mk("div","chips"),ig=mk("div","grid");ig.style.marginTop="18px";ih.id="ipf";$("#ipr").append(ih,ig);
+function ri(f){ig.innerHTML="";IP.filter(a=>f==="All"||a[1]===f||a[3]===f).forEach(a=>{const c=mk("div","fc rv in","<div class='fi'><div class='fa'><small>"+a[3]+" · "+a[1]+"</small><h3>"+a[0]+"</h3></div><div class='fb'><small>Application No.</small><b style='font:700 22px Oxanium'>"+a[2]+"</b><span>"+a[1]+" · "+a[3]+"</span></div></div>");c.onclick=()=>c.classList.toggle("f");ig.append(c)})}
+["All","Granted","Published","Registered","Filed","Utility patent","Design"].forEach(f=>{const b=mk("button",f==="All"?"on":"",f);b.onclick=()=>{ih.querySelectorAll("button").forEach(x=>x.classList.remove("on"));b.classList.add("on");ri(f)};ih.append(b)});ri("All");
+// memberships
+const mc=$("#member .chips");const mg=mk("div","grid");M.forEach(a=>mg.append(mk("div","t","<small>"+a[0]+"</small><h3 style='font-size:17px'>"+a[1]+"</h3>")));mc.replaceWith(mg);
+const words=["NAAC","NBA","NIRF","IEEE","ISTE","IEI","AICTE","Anna University","NIT Trichy","SASTRA","SAE","CSI"].map(w=>"<span>"+w+"</span>").join("");
+const mq=mk("div","mq","<div>"+words+words+"</div>");$("#member").append(mq);
+// testimonials: coverflow
+const cf=$("#cf"),cards=V.map(a=>{const c=mk("div","cc","<i>"+(a[3]?"Recognition":"Sample – replace")+"</i><q>"+a[1]+"</q><em>"+a[2]+"</em>");cf.append(c);return c});
+let ci=0,auto;function pos(){cards.forEach((c,i)=>{let d=i-ci;if(d>cards.length/2)d-=cards.length;if(d<-cards.length/2)d+=cards.length;c.style.transform="translateX("+d*58+"%) translateZ("+(-Math.abs(d)*160)+"px) rotateY("+(-d*38)+"deg)";c.style.opacity=Math.abs(d)>1?0:1-Math.abs(d)*.45;c.style.zIndex=10-Math.abs(d)})}
+function go(n){ci=(ci+n+cards.length)%cards.length;pos()}
+$("#nx").onclick=()=>{go(1);rs()};$("#pv").onclick=()=>{go(-1);rs()};
+function rs(){clearInterval(auto);if(!still)auto=setInterval(()=>go(1),5200)}pos();rs();
+// ---------- effects ----------
+const pg=mk("div");pg.id="pg";const gl=mk("div");gl.id="gl";document.body.append(pg,gl);
+addEventListener("pointermove",e=>{gl.style.left=e.clientX+"px";gl.style.top=e.clientY+"px"});
+const tp=$("#top");tp.onclick=()=>scrollTo({top:0});
+addEventListener("scroll",()=>{const h=document.documentElement;pg.style.width=scrollY/(h.scrollHeight-innerHeight)*100+"%";tp.classList.toggle("on",scrollY>innerHeight)},{passive:true});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll("section h2,section .t,.tl div,#member .mq,.cf").forEach(e=>{e.classList.add("rv");io.observe(e)});
+// counters
+document.querySelectorAll(".big").forEach(e=>{const n=parseInt(e.textContent),s=e.textContent.replace(/[0-9]/g,"");e.textContent="0"+s;const o=new IntersectionObserver(es=>{if(es[0].isIntersecting){o.disconnect();let k=0;const st=()=>{k+=1;e.textContent=Math.round(n*Math.min(k/50,1))+s;if(k<50)requestAnimationFrame(st)};still?e.textContent=n+s:st()}});o.observe(e)});
+// ember particles
+const fx=mk("canvas");fx.id="fx";document.body.prepend(fx);const x=fx.getContext("2d");let ps=[];
+function rz(){fx.width=innerWidth;fx.height=innerHeight}rz();addEventListener("resize",rz);
+for(let i=0;i<55;i++)ps.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*2+.6,v:Math.random()*.5+.15,a:Math.random()*6});
+if(!still)(function d(){x.clearRect(0,0,fx.width,fx.height);ps.forEach(p=>{p.y-=p.v;p.x+=Math.sin(p.a+=.01)*.3;if(p.y<-5){p.y=fx.height+5;p.x=Math.random()*fx.width}x.fillStyle="rgba(255,106,26,.45)";x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()});requestAnimationFrame(d)})();
+})();
+</script>
+</body></html>
